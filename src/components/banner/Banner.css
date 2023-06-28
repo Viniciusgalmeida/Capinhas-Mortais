@@ -1,0 +1,99 @@
+.banner {
+  background-color: #720026;
+  width: 100%;
+  height: auto;
+  padding: 20px 20px 60px 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@keyframes zoom-in-out {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.banner-image {
+  width: 100%;
+  margin-bottom: 30px;
+
+  animation: zoom-in-out 10s infinite ease-in-out;
+}
+
+.banner-Title {
+  font-family: "Gloock";
+  font-weight: 400;
+  font-style: normal;
+
+  color: #ff9b54;
+  font-size: 32px;
+  line-height: 1.1;
+  text-align: center;
+}
+
+.banner-buttons {
+  margin-top: 25px;
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.button-shop {
+  padding: 10px 20px 10px 20px;
+  background-color: #ce4257;
+  border-radius: 30px;
+  border: none;
+
+  font-family: "Space Grotesk";
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: left;
+
+  cursor: pointer;
+  transition: 300ms;
+}
+
+.button-shop:hover {
+  background-color: #f0e914;
+  color: #000;
+}
+
+.button-explore {
+  padding: 10px 20px 10px 20px;
+  background-color: #000000;
+  border-radius: 30px;
+  border: none;
+
+  font-family: "Space Grotesk";
+  color: #ff9b54;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: left;
+  cursor: pointer;
+  transition: 300ms;
+}
+
+.button-explore:hover {
+  background-color: #f0e914;
+  color: #000;
+}
+
+@media screen and (min-width: 768px) {
+  .banner-image {
+    max-width: 509px;
+  }
+
+  .banner-Title {
+    font-size: 60px;
+  }
+}
