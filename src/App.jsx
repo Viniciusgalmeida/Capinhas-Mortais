@@ -1,4 +1,3 @@
-import "./App.css";
 import Banner from "./components/banner/Banner";
 import Copys_Menu from "./components/copys/Copys";
 import Footer from "./components/footer/Footer";
